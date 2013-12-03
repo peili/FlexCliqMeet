@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:ChatController xmlns:mx="http://www.adobe.com/2006/mxml"
+					  xmlns:local="*"
+					  width="480" height="360" backgroundColor="#000000" 
+					  horizontalScrollPolicy="off"
+					  layout="absolute" paddingBottom="0" paddingRight="0"
+					  verticalScrollPolicy="off">
+	
+	<mx:UIComponent width="480" height="360"  x="0" y="0" id="videoCameraContainer"/>
+	<mx:UIComponent width="480" height="360" x="0" y="0" id="videoRemoteContainer"/>
+	<mx:TextInput visible="false" includeInLayout="false"  id="publishName" x="53" y="194" width="85"/>
+	<mx:Button label="Publish" visible="false" includeInLayout="false" id="doPublish" x="143" y="194"  />
+	<mx:TextInput visible="false" includeInLayout="false" id="subscribeName" x="332" y="194" width="85"/>
+	<mx:Button visible="false" includeInLayout="false" label="Play" id="doSubscribe" x="422" y="194" />
+	<mx:HBox visible="false" includeInLayout="false" x="120" y="240" horizontalGap="0">
+		<mx:TextInput id="connectStr" width="266"/>
+		<mx:Spacer width="4"/>
+		<mx:Button label="Connect" id="connectButton" />
+	</mx:HBox>
+	<mx:Text visible="false" includeInLayout="false" id="playerVersion" x="120" y="264" width="172" color="#747474" fontSize="10"/>
+	<mx:Text visible="false" includeInLayout="false" id="fpsText" x="6" y="304" width="85"/>
+	<mx:Text visible="false" includeInLayout="false" id="bufferLenText" x="456" y="304" width="85"/>
+	<mx:Text visible="false" includeInLayout="false" id="prompt" x="101" y="295" width="347" height="30"/>
+</local:ChatController>
